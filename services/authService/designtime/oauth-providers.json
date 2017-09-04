@@ -1,0 +1,10 @@
+[ {
+  "providerId" : "aaa",
+  "authorizationUrl" : "https://www.dropbox.com/1/oauth2/authorize",
+  "accessTokenUrl" : "https://api.dropbox.com/1/oauth2/token",
+  "clientId" : "a",
+  "clientSecret" : "a",
+  "sendAccessTokenAs" : "HEADER",
+  "accessTokenParamName" : "Bearer",
+  "scopes" : [ ]
+} ]

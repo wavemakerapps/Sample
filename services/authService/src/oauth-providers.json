@@ -1,0 +1,10 @@
+[ {
+  "providerId" : "aaa",
+  "authorizationUrl" : "${oauth2.aaa.authorizationUrl}",
+  "accessTokenUrl" : "${oauth2.aaa.accessTokenUrl}",
+  "clientId" : "${oauth2.aaa.clientId}",
+  "clientSecret" : "${oauth2.aaa.clientSecret}",
+  "sendAccessTokenAs" : null,
+  "accessTokenParamName" : null,
+  "scopes" : [ ]
+} ]
