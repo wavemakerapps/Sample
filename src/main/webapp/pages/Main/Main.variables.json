@@ -1,1 +1,133 @@
-{ }
+{
+  "databaseVariable1" : {
+    "_id" : "wm-databaseVariable1-wm.LiveVariable-1510207006016",
+    "name" : "databaseVariable1",
+    "owner" : "Page",
+    "category" : "wm.LiveVariable",
+    "dataBinding" : [ ],
+    "operation" : "read",
+    "dataSet" : [ ],
+    "type" : "User",
+    "isList" : false,
+    "saveInPhonegap" : false,
+    "maxResults" : 20,
+    "designMaxResults" : 10,
+    "inFlightBehavior" : "executeLast",
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "transformationRequired" : false,
+    "liveSource" : "hrdb",
+    "ignoreCase" : true,
+    "matchMode" : "start",
+    "orderBy" : "userId asc",
+    "propertiesMap" : {
+      "columns" : [ {
+        "fieldName" : "userId",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "USER_ID",
+        "isPrimaryKey" : true,
+        "notNull" : true,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "identity",
+        "isRelated" : false,
+        "scale" : 0
+      }, {
+        "fieldName" : "username",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "USERNAME",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 20,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 2
+      }, {
+        "fieldName" : "password",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "PASSWORD",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 20,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 2
+      }, {
+        "fieldName" : "role",
+        "type" : "string",
+        "fullyQualifiedType" : "string",
+        "columnName" : "ROLE",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 20,
+        "precision" : 19,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 2
+      }, {
+        "fieldName" : "tenantId",
+        "type" : "integer",
+        "fullyQualifiedType" : "integer",
+        "columnName" : "TENANT_ID",
+        "isPrimaryKey" : false,
+        "notNull" : false,
+        "length" : 255,
+        "precision" : 10,
+        "generator" : "assigned",
+        "isRelated" : false,
+        "scale" : 0
+      } ],
+      "entityName" : "User",
+      "fullyQualifiedName" : "com.sample.hrdb.User",
+      "tableType" : "TABLE",
+      "primaryFields" : [ "userId" ]
+    },
+    "bindCount" : 2,
+    "tableName" : "USER",
+    "tableType" : "TABLE",
+    "properties" : [ ],
+    "relatedTables" : [ ],
+    "filterFields" : { },
+    "package" : "com.sample.hrdb.User"
+  },
+  "GoogleapisInvoke" : {
+    "_id" : "wm-GoogleapisInvoke-wm.ServiceVariable-1510207042812",
+    "name" : "GoogleapisInvoke",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "origin",
+      "value" : "Toronto",
+      "type" : "java.lang.String"
+    }, {
+      "target" : "destination",
+      "value" : "Montreal",
+      "type" : "java.lang.String"
+    }, {
+      "target" : "sensor",
+      "value" : "false",
+      "type" : "java.lang.String"
+    } ],
+    "type" : "googleapis.RootResponse",
+    "service" : "googleapis",
+    "operation" : "invoke",
+    "operationId" : "googleapis_RestServiceVirtualController-invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "RestServiceVirtual"
+  }
+}
